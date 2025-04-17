@@ -7,9 +7,7 @@ export default defineConfig(({ mode }) => {
   if (!apiBase) {
     throw new Error("VITE_API_BASE is not defined in your .env");
   }
-  if (!/^https?:\/\//.test(apiBase)) {
-    apiBase = `https://pqqzywg2t3.us-east-1.awsapprunner.com/`;
-  }
+  apiBase = `https://pqqzywg2t3.us-east-1.awsapprunner.com/`;
 
   return {
     server: {
